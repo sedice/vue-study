@@ -35,16 +35,7 @@ const list: BfrFormItemProps[] = [
   {
     type: 'select',
     name: 'test',
-    dynamicProps() {
-      return {
-        label: '测试' + model.test,
-      }
-    },
-    hidden: () => model.username === 'admin',
-    // hidden: true,
-    // hide() {
-    //   return model.username === 'admin'
-    // },
+    label: '测试下拉框',
     rules: [
       {
         required: true,
